@@ -1,0 +1,19 @@
+import { Animal } from "./Animal";
+
+export class Mammal extends Animal{
+    private coat: string
+
+    constructor(name: string, age: number){
+        super(name, age)
+    }
+    public getCoat(): string {
+        return this.coat;
+    }
+    public setCoat(newCoat: string) {
+        this.coat = newCoat;
+    }
+
+    breastfeed(){
+        console.log("The Mamal breastfeed")
+    }
+}
