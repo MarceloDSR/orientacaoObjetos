@@ -2,7 +2,7 @@ import { Animal } from "./Animal";
 import { Mammal } from "./Mammal";
 import { Bird } from "./Bird";
 
-function realizarAcao(animal: Animal){
+function realizarAcao(animal: Animal): void{
     animal.emitSound();
 }
 
