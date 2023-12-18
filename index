@@ -1,25 +1,49 @@
-import { Animal } from "./Animal";
-import { Mammal } from "./Mammal";
-import { Bird } from "./Bird";
+/*Crie um sistema para representar animais em um zoológico. Cada animal tem um nome e uma idade.
+Há dois tipos principais de animais no zoológico: mamíferos e aves.
 
-function realizarAcao(animal: Animal): void{
-    animal.emitSound();
+Classe Animal:
+Possui propriedades privadas para nome e idade.
+Métodos getters e setters para nome e idade.
+Um método emitirSom() que exibe uma mensagem genérica de som.
+
+Classe Mamifero (herda de Animal):
+Além de herdar propriedades e métodos da classe Animal, possui uma propriedade privada para pelagem.
+Métodos getters e setters para pelagem.
+Um método amamentar() que exibe uma mensagem indicando que o mamífero está amamentando.
+
+Classe Ave (herda de Animal):
+Além de herdar propriedades e métodos da classe Animal, possui uma propriedade privada para envergadura.
+Métodos getters e setters para envergadura.
+Um método voar() que exibe uma mensagem indicando que a ave está voando.
+
+
+Crie instâncias de mamíferos e aves.
+Demonstre a capacidade de usar polimorfismo para tratar tanto mamíferos quanto aves como animais genéricos.
+Exiba informações específicas de mamíferos e aves.
+Chame os métodos específicos de mamíferos e aves. */
+
+export class Animal{
+    private name: string;
+    private age: number;
+
+    constructor(name: string, age: number){
+        this.name = name;
+        this.age = age;
+    }
+    public getName(): string {
+        return this.name;
+    }
+    public setName(newName: string) {
+        this.name = newName;
+    }
+
+    public getAge(): number {
+        return this.age;
+    }
+    public setAge(newAge: number) {
+        this.age = newAge;
+    }
+    emitSound(): void{
+        console.log(`made sound `);
+    }
 }
-
-function newsMammal(newMammal: Mammal): void{
-    console.log(`The animal ${newMammal.getName()} is ${newMammal.getAge()} years old and its coat is ${newMammal.getCoat()}!`)
-    newMammal.breastfeed()
-}
-
-function newsBirl(newBird: Bird): void{
-    console.log(`The animal ${newBird.getName()} is ${newBird.getAge()} years old and its wingspan is ${newBird.getWingspan()}!`)
-    newBird.fly()
-}
-const newMammal = new Mammal("Elefante", 8)
-const newBird = new Bird("Tucano", 4)
-
-realizarAcao(newBird)
-realizarAcao(newMammal)
-
-newsMammal(newMammal)
-newsBirl(newBird)
