@@ -1,10 +1,10 @@
 import { Animal } from "./Animal"
 
 export  class Bird extends Animal{
-    private wingspan: number
+    private wingspan: number;
 
     constructor(name: string, age: number){
-        super(name, age)
+        super(name, age);
     }
 
     public getWingspan(): number {
@@ -15,6 +15,6 @@ export  class Bird extends Animal{
     }
 
     fly(){
-        console.log("The bird is flying")
+        console.log("The bird is flying");
     }
 }
