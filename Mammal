@@ -1,10 +1,10 @@
 import { Animal } from "./Animal";
 
 export class Mammal extends Animal{
-    private coat: string
+    private coat: string;
 
     constructor(name: string, age: number){
-        super(name, age)
+        super(name, age);
     }
     public getCoat(): string {
         return this.coat;
@@ -14,6 +14,6 @@ export class Mammal extends Animal{
     }
 
     breastfeed(){
-        console.log("The Mamal breastfeed")
+        console.log("The Mammal breastfeed");
     }
 }
