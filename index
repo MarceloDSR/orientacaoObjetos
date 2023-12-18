@@ -1,0 +1,25 @@
+import { Animal } from "./Animal";
+import { Mammal } from "./Mammal";
+import { Bird } from "./Bird";
+
+function realizarAcao(animal: Animal){
+    animal.emitSound();
+}
+
+function newsMammal(newMammal: Mammal): void{
+    console.log(`The animal ${newMammal.getName()} is ${newMammal.getAge()} years old and its coat is ${newMammal.getCoat()}!`)
+    newMammal.breastfeed()
+}
+
+function newsBirl(newBird: Bird): void{
+    console.log(`The animal ${newBird.getName()} is ${newBird.getAge()} years old and its wingspan is ${newBird.getWingspan()}!`)
+    newBird.fly()
+}
+const newMammal = new Mammal("Elefante", 8)
+const newBird = new Bird("Tucano", 4)
+
+realizarAcao(newBird)
+realizarAcao(newMammal)
+
+newsMammal(newMammal)
+newsBirl(newBird)
