@@ -1,6 +1,6 @@
 import { HouseHeir } from "./HouseHeir";
 
-class Heir {
+export class Heir implements HouseHeir {
     heirName: string;
     heirAge: number;
     successionNumber: number;
