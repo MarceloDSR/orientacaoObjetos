@@ -1,7 +1,7 @@
 import { HouseHeir } from "./HouseHeir";
 export class NobleHouse {
-    private nameHouse: string; 
-    private motto: string; 
+    nameHouse: string; 
+    motto: string; 
    
 
     constructor(nameHouse: string, motto: string) {
