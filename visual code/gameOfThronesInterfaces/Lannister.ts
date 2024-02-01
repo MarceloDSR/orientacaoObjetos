@@ -1,6 +1,6 @@
 import { NobleHouse } from "./NobleHouse";
 
-export class Stark extends NobleHouse {
+export class Lannister extends NobleHouse {
     nameHouse: string; 
     motto: string; 
 }
