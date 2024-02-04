@@ -1,4 +1,3 @@
-import { Heir } from "./Heir"
 import { HouseHeir } from "./HouseHeir";
 
 export class NobleHouse {
@@ -17,9 +16,9 @@ addHeir(heir: HouseHeir): void {
   }
 
   printHouseInfo(): void {
-    console.log(`Casa Nobre: ${this.nameHouse}`);
-    console.log(`Lema: ${this.motto}`);
-    console.log("Herdeiros:");
+    console.log(`Noble House ${this.nameHouse}`);
+    console.log(`Motto: ${this.motto}`);
+    console.log("Heir:");
 
     for (let i = 0; i < this.heirs.length; i++) {
         const heir = this.heirs[i];
