@@ -1,6 +1,6 @@
 import { NobleHouse } from "./NobleHouse";
 
 export class Targaryen extends NobleHouse {
-    nameHouse: string; 
-    motto: string; 
+    nameHouse: string = "Targaryen"; 
+    motto: string = "Fire and Blood."; 
 }

@@ -1,6 +1,6 @@
 import { NobleHouse } from "./NobleHouse";
 
 export class Lannister extends NobleHouse {
-    nameHouse: string; 
-    motto: string; 
+    nameHouse: string = "Lannister"; 
+    motto: string = "Hear Me Roar!"; 
 }
