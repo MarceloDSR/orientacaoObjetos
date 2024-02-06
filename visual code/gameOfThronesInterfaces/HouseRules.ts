@@ -1,8 +1,7 @@
-export interface HouseRules {
+import { NobleHouse } from "./NobleHouse";
+
+export interface HouseRules extends NobleHouse {
     nameHouse: string; 
     motto: string; 
-    heirName: string;
-    heirAge: number;
-    successionNumber: number;
 
 }

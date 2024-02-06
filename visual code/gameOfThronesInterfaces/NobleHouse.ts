@@ -18,7 +18,7 @@ addHeir(heir: HouseHeir): void {
   printHouseInfo(): void {
     console.log(`Noble House ${this.nameHouse}`);
     console.log(`Motto: ${this.motto}`);
-    console.log("Heir:");
+    console.log("Heir: ");
 
     for (let i = 0; i < this.heirs.length; i++) {
         const heir = this.heirs[i];

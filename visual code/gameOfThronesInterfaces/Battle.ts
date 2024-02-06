@@ -1,13 +1,23 @@
 import { NobleHouse } from "./NobleHouse";
+import { HouseBaratheon } from "./HouseBaratheon";
+import { HouseGreyjoy } from "./HouseGreyjoy";
+import { HouseLannister } from "./HouseLannister";
+import { HouseStark} from "./HouseStark";
+import { HouseTargaryen } from "./HouseTargaryen";
+import { HouseHeir } from "./HouseHeir";
+import { HouseRules } from "./HouseRules"
+import { Heir } from "./Heir"
 
-export function BattleOfTheHouses(house1: NobleHouse, army1: number, house2: NobleHouse, army2: number): string {
-    console.log(`Batalha entre as casas ${house1} e ${house2}`);
+export function battleOfTheHouses(nameHouse: NobleHouse, army1: number, nameHouse1: NobleHouse, army2: number): string {
+    console.log(`Batalha entre as casas ${nameHouse} e ${nameHouse1}`);
   
     if (army1 > army2) {
-      return `${house1} Won the battle!`;
+      return `${nameHouse} Won the battle!`;
     } else if (army2 > army1) {
-      return `${house2} Won the battle!`;
+      return `${nameHouse1} Won the battle!`;
     } else {
       return 'The battle was drawn';
     }
   }
+  const NewStark = new HouseStark("Eddie stark", "Winter is Coming") 
+  
