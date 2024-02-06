@@ -20,3 +20,4 @@ export function battleOfTheHouses(nameHouse: NobleHouse, army1: number, nameHous
     }
   }
   
+  const houseStark = new HouseStark("Eddie Stark", "The inter is comming", 1);
