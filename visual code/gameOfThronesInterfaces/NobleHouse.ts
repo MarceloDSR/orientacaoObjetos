@@ -9,7 +9,7 @@ export class NobleHouse {
 constructor(nameHouse: string, motto: string, heirs: number) {
     this.nameHouse = nameHouse;
     this.motto = motto;
-    this.heirs = heirs
+    this.heirs = []
 }
 
 addHeir(heir: HouseHeir): void {
