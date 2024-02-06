@@ -19,5 +19,4 @@ export function battleOfTheHouses(nameHouse: NobleHouse, army1: number, nameHous
       return 'The battle was drawn';
     }
   }
-  const NewStark = new HouseStark("Eddie stark", "Winter is Coming") 
   

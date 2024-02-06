@@ -6,9 +6,10 @@ export class NobleHouse {
     heirs: HouseHeir[] = [];
    
 
-constructor(nameHouse: string, motto: string) {
+constructor(nameHouse: string, motto: string, heirs: number) {
     this.nameHouse = nameHouse;
     this.motto = motto;
+    this.heirs = heirs
 }
 
 addHeir(heir: HouseHeir): void {
@@ -18,7 +19,7 @@ addHeir(heir: HouseHeir): void {
   printHouseInfo(): void {
     console.log(`Noble House ${this.nameHouse}`);
     console.log(`Motto: ${this.motto}`);
-    console.log("Heir: ");
+    console.log(`Heir: ${this.heirs}`);
 
     for (let i = 0; i < this.heirs.length; i++) {
         const heir = this.heirs[i];
