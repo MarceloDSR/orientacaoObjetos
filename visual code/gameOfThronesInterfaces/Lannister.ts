@@ -1,6 +1,11 @@
 import { NobleHouse } from "./NobleHouse";
 
 export class Lannister extends NobleHouse {
-    nameHouse: string = "Lannister"; 
-    motto: string = "Hear Me Roar!"; 
+    nameHouse: string; 
+    motto: string; 
+    numSoldiers: number;
+
+    constructor(nameHouse: string, motto: string, numSoldiers: number){
+        super(nameHouse, motto, numSoldiers);
+      }
 }
