@@ -1,6 +1,11 @@
 import { NobleHouse } from "./NobleHouse";
 
 export class Greyjoy extends NobleHouse {
-    nameHouse: string = "Greyjoy "; 
-    motto: string = "We Do Not Sow."; 
+    nameHouse: string; 
+    motto: string; 
+    numSoldiers: number;
+
+    constructor(nameHouse: string, motto: string, numSoldiers: number){
+        super(nameHouse, motto, numSoldiers);
+      }
 }
