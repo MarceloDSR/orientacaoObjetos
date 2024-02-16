@@ -15,7 +15,7 @@ export function BattleOfTheHouses(
   house2: Baratheon | Greyjoy | Lannister | Stark | Targaryen,
   army2: number
 ): string {
-    console.log(`Batalha entre as casas ${house1.nameHouse} e ${house2.nameHouse}`);
+    console.log(`Battle of Houses ${house1.nameHouse} and ${house2.nameHouse}`);
 
     if (army1 > army2) {
         return `${house1.nameHouse} Won the battle!`;
