@@ -4,12 +4,13 @@ export class NobleHouse {
     nameHouse: string; 
     motto: string; 
     heirs: HouseHeir[] = [];
+    numSoldiers: number; 
    
 
-constructor(nameHouse: string, motto: string, heirs: number) {
+constructor(nameHouse: string, motto: string, numSoldiers: number) {
     this.nameHouse = nameHouse;
     this.motto = motto;
-    this.heirs = []
+    this.numSoldiers = numSoldiers
 }
 
 addHeir(heir: HouseHeir): void {
