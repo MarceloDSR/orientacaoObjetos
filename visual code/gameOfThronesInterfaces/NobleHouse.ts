@@ -1,10 +1,10 @@
-import { HouseHeir } from "./HouseHeir";
+import { Heir } from "./Heir";
 
 export class NobleHouse {
     nameHouse: string; 
     motto: string; 
-    heirs: HouseHeir[] = [];
     numSoldiers: number; 
+    heirs: Heir[] = [];
    
 
 constructor(nameHouse: string, motto: string, numSoldiers: number) {
@@ -13,14 +13,14 @@ constructor(nameHouse: string, motto: string, numSoldiers: number) {
     this.numSoldiers = numSoldiers
 }
 
-addHeir(heir: HouseHeir): void {
+addHeir(heir: Heir) {
     this.heirs.push(heir);
   }
 
   printHouseInfo(): void {
     console.log(`Noble House ${this.nameHouse}`);
     console.log(`Motto: ${this.motto}`);
-    console.log(`Heir: ${this.heirs}`);
+    console.log(`Heir:`);
 
     for (let i = 0; i < this.heirs.length; i++) {
         const heir = this.heirs[i];
