@@ -1,9 +1,12 @@
 import { NobleHouse } from "./NobleHouse";
+import { Heir } from "./Heir";
+import { HouseRules } from "./HouseRules";
 
-export class Baratheon extends NobleHouse {
+export class Baratheon extends NobleHouse implements HouseRules {
     nameHouse: string; 
     motto: string; 
     numSoldiers: number;
+    heirs: Heir[] = [];
     
 
     constructor(nameHouse: string, motto: string, numSoldiers: number){
