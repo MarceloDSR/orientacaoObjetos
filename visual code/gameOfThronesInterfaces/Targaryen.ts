@@ -1,9 +1,12 @@
 import { NobleHouse } from "./NobleHouse";
+import { Heir } from "./Heir";
+import { HouseRules } from "./HouseRules";
 
-export class Targaryen extends NobleHouse {
-    nameHouse: string; 
-    motto: string; 
-    numSoldiers: number;
+export class Targaryen extends NobleHouse implements HouseRules {
+  nameHouse: string; 
+  motto: string; 
+  numSoldiers: number;
+  heirs: Heir[] = [];
 
     constructor(nameHouse: string, motto: string, numSoldiers: number){
         super(nameHouse, motto, numSoldiers);
