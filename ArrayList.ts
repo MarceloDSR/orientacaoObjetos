@@ -40,5 +40,10 @@ export class ArrayList implements IList{
             this.items.shift()
         }
     }
-    
+ // Remove o último elemento da lista
+    removeLast(): void {
+        if(!this.isEmpty()){
+            this.items.pop()
+        }
+    }
 }
